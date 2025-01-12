@@ -8,7 +8,15 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+main {
+    padding: 0 100px;
+    min-height: 100vh;
+}
 
+main section {
+    padding: 100px 20px;
+    margin-bottom: 100px;
+}
 
 .header {
     display: flex;
@@ -16,12 +24,18 @@ body {
     align-items: center;
     padding: 0;
     border-bottom: 1px solid #e0e0e0;
+    padding: 0 20px;
 }
 
 .header__logo-box {
     display: inline-block;
     margin-left: 20px;
 
+}
+
+.header__logo-box a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header__logo {
@@ -143,6 +157,12 @@ body {
     margin-left: 20px;
 }
 
+.footer__logo-box a {
+    text-decoration: none;
+    color: white;
+}
+
+
 .footer__logo {
     display: block;
     width: 100px;
@@ -214,7 +234,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
 }
 
@@ -269,17 +288,15 @@ body {
 
 .options {
     display: flex;
-    justify-content: center;
     padding: 20px 20px;
     background-color: #f0f0f0;
-    max-height: 100vh;
 }
 
 .options__info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 200px;
+    padding: 20px 40px;
     width: 50%;
 }
 
@@ -288,11 +305,17 @@ body {
     flex-direction: column;
     width: 50%;
     gap: 20px;
+    max-height: 100vh;
     overflow: auto;
     border: 2px dashed rgb(69, 69, 69);
     padding: 20px;
 }
 
+.options__items-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
 .options__card {
     display: flex;
@@ -316,6 +339,13 @@ body {
     text-align: justify;
 }
 
+.options__card-icon {
+    display: block;
+    width:  32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
 .options__card-link {
     text-decoration: none;
     color: #fff;
@@ -325,8 +355,17 @@ body {
     border-radius: 50px;
 }
 
+.options__card-link.white {
+    background-color: #fff;
+    color: black;
+}
+
 .options__card-link:hover {
     background-color: rgb(69, 69, 69);
+}
+
+.options__card-link:hover.white{
+    background-color: rgb(197, 197, 197);
 }
 
 .options__title {
@@ -345,14 +384,54 @@ body {
     text-align: justify;
 }
 
+.outer-description {
+    display: flex;
+    background-color: black;
+}
+
 .description {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    padding: 80px 200px;
+    padding: 80px 100px;
     background-color: black;
-    max-height: 100vh;
+    color: #fff;
+    flex: 1;
+    
+}
+
+.ms-list-img {
+    width: 96px;
+}
+
+.ms-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.ms-item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 1
+}
+.ms-grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ms-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ms-item-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .description__title {
@@ -380,6 +459,24 @@ body {
     
 }
 
+.h-bar-dashed {
+    border-top: 2px dashed rgb(69, 69, 69);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.h-bar {
+    border-top: 2px solid rgb(69, 69, 69);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.h-bar-dotted {
+    border-top: 2px dotted rgb(69, 69, 69);
+    width: 100%;
+    margin: 20px 0;
+}
+
 .options__item-title {
     font-size: 3rem;
     color: #000;
@@ -396,6 +493,13 @@ body {
     font-size: 1.5rem;
     color: #000;
 
+}
+
+.options__item-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
 }
 
 
