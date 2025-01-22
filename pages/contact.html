@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact OburTech</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <section class="contact__form">
+        <h1 class="contact__form-title">Connect with us!</h1>
+        <div class="contact__form-main">
+          <form>
+            <div class="contact__form-inputs">
+              <input
+                type="text"
+                class="contact__form-input"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <p id="name-error" class="contact__form-input-error"></p>
+              <input
+                type="email"
+                class="contact__form-input"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <p id="email-error" class="contact__form-input-error"></p>
+              <input
+                type="text"
+                class="contact__form-input"
+                name="phone"
+                placeholder="Phone"
+              />
+              <input
+                type="text"
+                name="address"
+                class="contact__form-input"
+                placeholder="Address"
+                required
+              />
+              <p id="address-error" class="contact__form-input-error"></p>
+              <input
+                type="text"
+                class="contact__form-input"
+                name="city"
+                placeholder="City"
+              />
+              <input
+                type="text"
+                class="contact__form-input"
+                name="state"
+                placeholder="State"
+              />
+              <textarea
+                class="contact__form-input text-area"
+                placeholder="Write you message, questions, or comments here..."
+                required
+              ></textarea>
+              <p id="message-error" class="contact__form-input-error"></p>
+              <div>
+                <input
+                  type="submit"
+                  value="Send"
+                  class="contact__form-button"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
