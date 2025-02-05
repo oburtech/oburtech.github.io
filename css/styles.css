@@ -438,6 +438,14 @@ main section {
     
 }
 
+.content__wide-card-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
     .content__card-container {
         flex-direction: column; /* Stack cards vertically on smaller screens */
@@ -711,5 +719,7 @@ td {
     opacity: 0.9;
     cursor: pointer;
 }
+
+
 
 
